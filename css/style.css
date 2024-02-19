@@ -1,0 +1,111 @@
+/* Natthapat Wongsawatgul 6409610612 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mali', sans-serif;
+}
+
+.background {
+    background-image: url('../images/bgimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.block {
+    background-position: center;
+    background-color: rgba(40, 30, 10, 0.85);
+    border-radius: 5%;
+    font-family: 'Mali';
+    padding: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 60vh;
+}
+
+.footer {
+    background-color: rgba(40, 30, 10, 0.85);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.header {
+    background-color: rgba(40, 30, 10, 0.85);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.header h1,
+.footer h1 {
+    margin: 0;
+}
+
+.button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Mali';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .block {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .block-container {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .header,
+    .footer {
+        padding: 20px 0;
+    }
+
+    .button {
+        width: 90%;
+    }
+}
